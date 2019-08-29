@@ -1,5 +1,7 @@
 <template>
-  <div class="oHeader" />
+  <div class="oHeader">
+    <slot />
+  </div>
 </template>
 
 <script lang="ts">

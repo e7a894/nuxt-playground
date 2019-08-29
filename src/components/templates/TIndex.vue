@@ -1,14 +1,14 @@
 <template>
   <div class="tIndex">
-    <o-header class="tIndex__header" />
+    <o-header class="tIndex__header">
+      <button @click="expand = !expand">
+        expand
+      </button>
+    </o-header>
     <div class="tIndex__body">
       <o-sidebar-block :expand="expand">
         <template #sidebar>
-          <div :style="{ backgroundColor: '#999', height: '100%' }">
-            <button @click="click">
-              expand
-            </button>
-          </div>
+          <div :style="{ backgroundColor: '#999', height: '100%' }" />
         </template>
         <template #content>
           TESTtesttesttesttesttesttesttesttesttesttesttesttest
@@ -19,16 +19,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, PropSync, Vue } from 'vue-property-decorator';
 import OHeader from '~/components/organisms/OHeader/index.vue';
 import OSidebarBlock from '~/components/organisms/OSidebarBlock/index.vue';
 
 @Component({ components: { OHeader, OSidebarBlock } })
 export default class extends Vue {
-  expand: boolean = false;
-  click() {
-    this.expand = !this.expand;
-  }
+  @PropSync('sidebarExpand') expand!: boolean;
 }
 </script>
 

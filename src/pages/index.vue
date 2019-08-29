@@ -1,5 +1,8 @@
 <template>
-  <t-index />
+  <t-index
+    :sidebar-expand="$store.getters.sidebarExpand"
+    @update:sidebarExpand="$store.dispatch('asyncSetSidebarExpand')"
+  />
 </template>
 
 <script lang="ts">
