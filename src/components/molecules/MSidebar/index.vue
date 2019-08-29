@@ -1,0 +1,32 @@
+<template>
+  <div :class="[`mSidebar${expand ? '--expand' : ''}`]">
+    <slot />
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+
+@Component
+export default class extends Vue {
+  @Prop({ default: false }) expand!: boolean;
+}
+</script>
+
+<style lang="scss" scoped>
+.mSidebar {
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s ease;
+  width: 78px;
+
+  &:hover {
+    width: 250px;
+  }
+
+  &--expand {
+    @extend .mSidebar;
+    width: 250px;
+  }
+}
+</style>

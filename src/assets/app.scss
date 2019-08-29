@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
