@@ -4,6 +4,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "vue/html-closing-bracket-spacing": "off"
+    "vue/html-closing-bracket-spacing": "off",
+    "vue/html-self-closing": ["error", { "html": { "void": "always" } }]
   }
 }

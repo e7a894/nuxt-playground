@@ -26,11 +26,11 @@ export default class extends Vue {
 
   &__content {
     @extend .oSidebarBlock;
-    padding-left: 78px;
+    padding-left: 60px;
 
     &--expand {
       @extend .oSidebarBlock;
-      padding-left: 250px;
+      padding-left: 240px;
     }
   }
 }

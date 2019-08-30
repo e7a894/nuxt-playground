@@ -1,5 +1,5 @@
 <template>
-  <div class="oHeader">
+  <div class="aHeaderItem">
     <slot />
   </div>
 </template>
@@ -12,9 +12,11 @@ export default class extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-.oHeader {
+.aHeaderItem {
   align-items: center;
   display: flex;
-  height: 60px;
+  height: 100%;
+  justify-content: center;
+  min-width: 60px;
 }
 </style>

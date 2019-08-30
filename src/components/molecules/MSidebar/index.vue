@@ -18,15 +18,15 @@ export default class extends Vue {
   height: 100%;
   position: absolute;
   transition: all 0.3s ease;
-  width: 78px;
+  width: 60px;
 
   &:hover {
-    width: 250px;
+    width: 240px;
   }
 
   &--expand {
     @extend .mSidebar;
-    width: 250px;
+    width: 240px;
   }
 }
 </style>
