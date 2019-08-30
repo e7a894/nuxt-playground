@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-playground",
+  "name": "nuxt-sandbox",
   "version": "0.1.0",
-  "description": "Nuxt TypeScript playground",
+  "description": "Nuxt TypeScript sandbox",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/e7a894/nuxt-playground.git"
+    "url": "git+https://github.com/e7a894/nuxt-sandbox.git"
   },
   "author": "e7a894 <e7a894@outlook.jp>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/e7a894/nuxt-playground/issues"
+    "url": "https://github.com/e7a894/nuxt-sandbox/issues"
   },
-  "homepage": "https://github.com/e7a894/nuxt-playground#readme",
+  "homepage": "https://github.com/e7a894/nuxt-sandbox#readme",
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.1.3",
     "@storybook/vue": "^5.1.11",
