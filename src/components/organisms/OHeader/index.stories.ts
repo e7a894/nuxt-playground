@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import OHeader from './index.vue';
 
-storiesOf('OHeader', module)
+storiesOf('Organisms/OHeader', module)
   .add(
     'default',
     () => ({

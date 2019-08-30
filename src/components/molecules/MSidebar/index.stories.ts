@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue';
 import { boolean } from '@storybook/addon-knobs';
 import OSidebar from './index.vue';
 
-storiesOf('MSidebar', module)
+storiesOf('Molecules/MSidebar', module)
   .add(
     'default',
     () => ({

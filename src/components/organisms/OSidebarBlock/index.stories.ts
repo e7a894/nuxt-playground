@@ -17,7 +17,7 @@ const description = {
   }
 };
 
-storiesOf('OSidebarBlock', module)
+storiesOf('Organisms/OSidebarBlock', module)
   .add(
     'default',
     () => ({

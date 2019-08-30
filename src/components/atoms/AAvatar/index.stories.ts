@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue';
 import { text, number } from '@storybook/addon-knobs';
 import AAvatar from './index.vue';
 
-storiesOf('AAvatar', module).add(
+storiesOf('Atoms/AAvatar', module).add(
   'sample',
   () => ({
     components: { AAvatar },

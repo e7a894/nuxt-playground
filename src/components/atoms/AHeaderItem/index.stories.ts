@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import AHeaderItem from './index.vue';
 
-storiesOf('AHeaderItem', module).add(
+storiesOf('Atoms/AHeaderItem', module).add(
   'default',
   () => ({
     components: { AHeaderItem },
