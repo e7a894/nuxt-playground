@@ -26,6 +26,11 @@
           <n-link to="list">
             TESTtesttesttesttesttesttesttesttesttesttesttesttest
           </n-link>
+          <div>
+            <n-link to="error">
+              Go to Error
+            </n-link>
+          </div>
         </template>
       </o-sidebar-block>
     </div>
