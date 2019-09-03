@@ -23,8 +23,8 @@
           <div :style="{ backgroundColor: '#999', height: '100%' }" />
         </template>
         <template #content>
-          <n-link to="list">
-            TESTtesttesttesttesttesttesttesttesttesttesttesttest
+          <n-link to="/">
+            LISTlist
           </n-link>
         </template>
       </o-sidebar-block>
