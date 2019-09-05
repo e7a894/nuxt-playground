@@ -1,23 +1,23 @@
 import { storiesOf } from '@storybook/vue';
 import { boolean } from '@storybook/addon-knobs';
-import OSidebar from './index.vue';
+import ASidebar from './index.vue';
 
-storiesOf('Molecules/MSidebar', module)
+storiesOf('Atoms/ASidebar', module)
   .add(
     'default',
     () => ({
-      components: { OSidebar },
+      components: { ASidebar },
       props: { expand: { default: boolean('expand', false) } },
-      template: `<o-sidebar />`
+      template: `<a-sidebar />`
     }),
     { info: true }
   )
   .add(
     'sample',
     () => ({
-      components: { OSidebar },
+      components: { ASidebar },
       props: { expand: { default: boolean('expand', false) } },
-      template: `<o-sidebar :expand="expand">
+      template: `<a-sidebar :expand="expand">
         <div :style="{
           backgroundColor: '#666',
           height: '100%'

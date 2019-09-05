@@ -1,20 +1,20 @@
 import { storiesOf } from '@storybook/vue';
-import OHeader from './index.vue';
+import AHeader from './index.vue';
 
-storiesOf('Organisms/OHeader', module)
+storiesOf('Atoms/AHeader', module)
   .add(
     'default',
     () => ({
-      components: { OHeader },
-      template: '<o-header />'
+      components: { AHeader },
+      template: '<a-header />'
     }),
     { info: true }
   )
   .add(
     'sample',
     () => ({
-      components: { OHeader },
-      template: `<o-header :style="{
+      components: { AHeader },
+      template: `<a-header :style="{
         backgroundColor: 'red'
       }" />`
     }),

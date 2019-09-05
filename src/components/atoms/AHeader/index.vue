@@ -1,5 +1,5 @@
 <template>
-  <div class="oHeader">
+  <div class="aHeader">
     <slot />
   </div>
 </template>
@@ -8,11 +8,11 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class extends Vue {}
+export default class AHeader extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-.oHeader {
+.aHeader {
   align-items: center;
   display: flex;
   height: 60px;

@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/vue';
 import { boolean } from '@storybook/addon-knobs';
-import OSidebarBlock from './index.vue';
+import MSidebarBlock from './index.vue';
 
 const info = {
   summary: `You can expand sidebar on hover.  
@@ -17,13 +17,13 @@ const description = {
   }
 };
 
-storiesOf('Organisms/OSidebarBlock', module)
+storiesOf('Molecules/MSidebarBlock', module)
   .add(
     'default',
     () => ({
-      components: { OSidebarBlock },
+      components: { MSidebarBlock },
       props: { expand: { default: boolean('expand', false) } },
-      template: `<o-sidebar-block />`,
+      template: `<m-sidebar-block />`,
       description
     }),
     { info }
@@ -31,11 +31,11 @@ storiesOf('Organisms/OSidebarBlock', module)
   .add(
     'sample',
     () => ({
-      components: { OSidebarBlock },
+      components: { MSidebarBlock },
       data() {
         return { expand: false };
       },
-      template: `<o-sidebar-block :expand="expand">
+      template: `<m-sidebar-block :expand="expand">
         <template #sidebar>
           <div :style="{
             height: '100%', backgroundColor: '#666'
@@ -48,7 +48,7 @@ storiesOf('Organisms/OSidebarBlock', module)
             backgroundColor: '#eee', textAlign: 'center'
           }">expand: {{expand}}</div>
         </template>
-      </o-sidebar-block>`,
+      </m-sidebar-block>`,
       description
     }),
     { info }
