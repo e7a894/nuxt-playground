@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'nuxt-property-decorator';
 import ALoading from '~/components/atoms/ALoading/index.vue';
 
 @Component({ components: { ALoading } })

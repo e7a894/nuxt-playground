@@ -38,7 +38,8 @@
 </template>
 
 <script lang="ts">
-import { Component, PropSync, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'nuxt-property-decorator';
+import { PropSync } from 'vue-property-decorator';
 import AAvatar from '~/components/atoms/AAvatar/index.vue';
 import AHeaderItem from '~/components/atoms/AHeaderItem/index.vue';
 import MSidebarBlock from '~/components/molecules/MSidebarBlock/index.vue';

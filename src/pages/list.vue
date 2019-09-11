@@ -6,11 +6,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'nuxt-property-decorator';
 import TList from '~/components/templates/TList.vue';
 
 @Component({
-  components: { TList },
+  components: { TList }
+})
+export default class extends Vue {
   async fetch() {
     const x = new Promise(resolve => {
       setTimeout(() => {
@@ -19,6 +21,5 @@ import TList from '~/components/templates/TList.vue';
     });
     await x.then(() => null);
   }
-})
-export default class extends Vue {}
+}
 </script>

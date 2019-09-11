@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from 'nuxt-property-decorator';
 import MGridRow from '~/components/molecules/MGridRow/index.vue';
 import MGridHeader from '~/components/molecules/MGridHeader/index.vue';
 import { Column } from '~/types/grid';

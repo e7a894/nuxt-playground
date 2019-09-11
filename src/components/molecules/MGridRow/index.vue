@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from 'nuxt-property-decorator';
 import AGridCell from '~/components/atoms/AGridCell/index.vue';
 import { Cell, Column } from '~/types/grid';
 
