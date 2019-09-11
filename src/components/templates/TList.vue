@@ -1,6 +1,6 @@
 <template>
   <div class="tIndex">
-    <o-header class="tIndex__header">
+    <a-header class="tIndex__header">
       <a-header-item>
         <button @click="expand = !expand">
           expand
@@ -16,9 +16,9 @@
           :radius="50"
         />
       </a-header-item>
-    </o-header>
+    </a-header>
     <div class="tIndex__body">
-      <o-sidebar-block :expand="expand">
+      <m-sidebar-block :expand="expand">
         <template #sidebar>
           <div :style="{ backgroundColor: '#999', height: '100%' }" />
         </template>
@@ -27,7 +27,7 @@
             LISTlist
           </n-link>
         </template>
-      </o-sidebar-block>
+      </m-sidebar-block>
     </div>
   </div>
 </template>
@@ -36,10 +36,10 @@
 import { Component, PropSync, Vue } from 'vue-property-decorator';
 import AAvatar from '~/components/atoms/AAvatar/index.vue';
 import AHeaderItem from '~/components/atoms/AHeaderItem/index.vue';
-import OHeader from '~/components/organisms/OHeader/index.vue';
-import OSidebarBlock from '~/components/organisms/OSidebarBlock/index.vue';
+import AHeader from '~/components/atoms/AHeader/index.vue';
+import MSidebarBlock from '~/components/molecules/MSidebarBlock/index.vue';
 
-@Component({ components: { AAvatar, AHeaderItem, OHeader, OSidebarBlock } })
+@Component({ components: { AAvatar, AHeaderItem, AHeader, MSidebarBlock } })
 export default class extends Vue {
   @PropSync('sidebarExpand') expand!: boolean;
 }
