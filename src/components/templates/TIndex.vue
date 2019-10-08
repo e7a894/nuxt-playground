@@ -3,7 +3,7 @@
     <a-header class="tIndex__header">
       <a-header-item>
         <button @click="expand = !expand">
-          expand
+          <fa icon="bars" size="2x" />
         </button>
       </a-header-item>
       <a-header-item class="tIndex__header__title">

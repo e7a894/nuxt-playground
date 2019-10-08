@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/e7a894/nuxt-sandbox#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/vue-fontawesome": "^0.1.7",
     "@nuxt/typescript-runtime": "^0.1.5",
     "@storybook/vue": "^5.1.11",
     "nuxt": "^2.9.2",
